@@ -48,12 +48,6 @@ class PrayerTimesWidget extends Component {
           <td>{this.state.prayerTimes['asr_1_begins']}</td>
           <td rowSpan="2">{this.state.prayerTimes['asr_jamaah']}</td>
         </tr>,
-        <tr key="asr2">
-          <td className="mithl-text">mithl 2</td>
-          <td className="normal-text">
-            {this.state.prayerTimes['asr_2_begins']}
-          </td>
-        </tr>
       ];
     }
   }
