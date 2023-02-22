@@ -55,15 +55,9 @@ class PrayerTimesSingleView extends Component {
 
   getAsrTime() {
     if (
-      this.state.prayerTimes['asr_1_begins'] &&
-      !this.state.prayerTimes['asr_2_begins']
+      this.state.prayerTimes['asr_1_begins'] 
     ) {
       return this.state.prayerTimes['asr_1_begins'];
-    } else if (
-      this.state.prayerTimes['asr_2_begins'] &&
-      !this.state.prayerTimes['asr_1_begins']
-    ) {
-      return this.state.prayerTimes['asr_2_begins'];
     } else {
       return (
         <ul className="bullet-list--no-decorations">
